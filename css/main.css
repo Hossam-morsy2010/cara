@@ -1,0 +1,356 @@
+/*navbar start*/
+.main-nav{
+  background-color: #E3E6F3 !important;
+  color: black ;
+
+}
+.links li {
+  position: relative;
+
+}
+.links li:hover::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: #15877F;
+  top: 100%;
+  left: 11%;
+
+}
+.links li a:hover {
+  color: #15877F !important;
+}
+.shoping {
+  color: black;
+  position: relative;
+}
+.shoping::after {
+  content: '0';
+  position: absolute;
+  top: -3px;
+  left: 25px;
+  background-color: #15877F;
+  width: 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+/*banner starts here*/
+.banner {
+  background-image: url(../images/hero4.png);
+  background-size: cover;
+  background-position: 50%;
+  height: 120vh;
+}
+@media screen and (max-width: 720px) {
+  .banner {
+    background-image: none;
+    background-color: #E3E6F3;
+  }
+  .banner-row {
+    justify-content: center;
+  }
+  .first-head {
+    font-size: 2rem !important;
+  }
+  .sec-head {
+    font-size: 2.5rem !important;
+  }
+}
+.banner-row {
+  height: 100%;
+}
+.first-head {
+  font-size: 4rem;
+}
+.sec-head {
+  color: #15877F;
+  font-size: 4rem;
+}
+.small-pic {
+  background-image: url(../images/button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 40%;
+  text-align: center;
+  font-size: 24px;
+}
+@media screen and (max-width:727px) {
+  .small-pic {
+    width: 80%;
+  }
+  
+}
+.shop-button {
+  color: #15877F;
+}
+/*pros section start here*/
+
+.pros {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+}
+@media (max-width:396px) {
+  .pros {
+    justify-content: center;
+  }
+}
+.fe-card {
+  flex-basis: 17%;
+  text-align: center;
+}
+.pros div p {
+  background-color: rgb(253, 221, 228);
+  color: #15877F;
+  margin: 10px 10px;
+}
+.pros div {
+  border: 1px solid #15877F
+}
+/*featured products section*/
+.card-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width:767px) {
+  .card-parent {
+    flex-direction: column;
+  }
+}
+.card-child {
+  flex-basis: 23%;
+  border: 1px solid rgb(194, 220, 197);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.card-child img {
+  width: 275px;
+  margin: 12px;
+  border-radius: 20px;
+}
+.cart-parent {
+  /* position: relative; */
+
+}
+
+.cart {
+  /* position: absolute;
+  top: -60px;
+  left: -12px; */
+  color: #15877F;
+  font-size: 20px;
+  border: 1px solid rgba(8, 129, 120, 20%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(232, 246, 234);
+}
+/* @media screen and (min-width:1px) and (max-width:576px) {
+  .cart {
+    left: 252px;
+  }
+} */
+.special {
+  position: absolute;
+  top: -60px;
+  left: 132px;
+}
+.marke {
+  margin-top: -12px;
+}
+.stars {
+  font-size: 14px;
+  color: rgb(243, 181, 25);
+}
+.price {
+  color: #15877F;
+}
+/*start repair section*/
+.repair {
+  background-image: url(../images/b2.jpg);
+  background-size: cover;
+  background-position: 50%;
+  min-height: 30vh;
+  
+}
+
+.repair-row {
+  color: white;
+}
+.repair-row div p span {
+  color: rgb(239, 54, 54);
+}
+
+/*start offer pictures section*/
+.offer-sec {
+  min-height: 50vh;
+}
+.offer-parent {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+.part-1 {
+  background-image: url(../images/b17.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 330px;
+  min-width: 49%;
+  color: white;
+  padding: 95px 0 95px 50px; 
+}
+.part-1 button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.part-2 {
+  background-image: url(../images/b10.jpg);
+  background-size: cover;
+  background-position: 50%;
+  min-width: 49%;
+  height: 330px;
+  color: white;
+  padding: 95px 0 95px 50px; 
+
+}
+.part-2 button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.part-3 {
+  background-image: url(../images/b7.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 264px;
+  min-width: 49%;
+  color: white;
+  padding: 95px 0 95px 50px; 
+}
+.part-3 p {
+  color: red;
+}
+.part-4 {
+  background-image: url(../images/b4.jpg);
+  background-size: cover;
+  background-position: 50%;
+  min-width: 49%;
+  height: 264px;
+  color: white;
+  padding: 95px 0 95px 50px; 
+}
+.part-4 p {
+  color: red;
+}
+.part-5 {
+  background-image: url(../images/b18.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 264px;
+  min-width: 49%;
+  color: white;
+  padding: 95px 0 95px 50px; 
+}
+.part-5 p {
+  color: red;
+}
+@media screen and (min-width: 100px) and (max-width:768px) {
+  .offer-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .part-1 {
+      width: 98%;
+    }
+    .part-2 {
+      width: 98%;
+    }
+    .part-3 {
+      width: 98%;
+    }
+    .part-4 {
+      width: 98%;
+    }
+    .part-5 {
+      width: 98%;
+    
+    }
+}
+/*start sign up section*/
+.main-sign {
+  background-image: url(../images/b1.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.left-col h2 {
+  color: white;
+}
+.left-col p {
+  color: rgb(129, 142, 151);
+}
+.left-col span {
+  color: rgb(247, 189,  39);
+}
+
+.sign-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.sign-button {
+  background-color: rgb(8, 129, 120);
+  color: white;
+}
+/*start footer section*/
+.info span {
+color: rgb(70, 91, 82);
+font-weight: bold;
+}
+.info i {
+  color: rgb(70, 91, 82);
+  
+}
+.contacto ul li{
+  color: rgb(70, 91, 82);
+}
+.paymento p {
+  color: rgb(70, 91, 82);
+}
+.paymento button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.paymento button img{
+  border: 2px solid rgb(8, 129, 120);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+
+}
+.trademark {
+  color: rgb(70, 91, 82);
+}
